@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula JS</title>
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+
+
+<body>
+    <div class=campoForm>
+        <label>Nome do carro:</label>
+        <input class="inputForm" type="text" name="Nome" id="nome">
+
+        <label>Portas:</label>
+        <input class="inputForm" type="number" name="vPortas" id="vportas" value="0">
+
+        <label>Blindagem:</label>
+        <input class="inputForm" type="number" name="vBlindagem" id="vblindagem" value="0" disabled>
+
+        <label>Munição:</label>
+        <input class="inputForm" type="number" name="vMunicao" id="vmunicao" value="0" disabled>
+
+    </div>
+
+    <div class="tipo">
+        <input id="inputTipo" class="passeio" type="radio" name="genero" value="Passeio" checked> Passeio
+    </div>
+
+    <div class="tipo">
+        <input id="inputTipo" class="militar" type="radio" name="genero" value="Militar"> Militar
+    </div>
+
+    <div>
+        <button id="button" type="submit">Enviar</button>
+    </div>
+
+
+    <div id="resultado">
+        <p id="pResultado">RECEBER RESULTADO
+        </p>
+    </div>
+
+
+    <script src="JS/arquivo.js"></script>
+</body>
+
+
+</html>

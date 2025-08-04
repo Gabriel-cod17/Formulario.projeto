@@ -1,0 +1,66 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    box-sizing: border-box;
+    font-size: large;
+}
+
+.campoForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputForm {
+    border: 1px solid black;
+    border-radius: 7px;
+    background-color: #e6e4e4;
+    width: 500px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.tipo {
+    margin-top: 5px;
+}
+
+#inputTipo {
+    border: 1px solid black;
+    width: 20px;
+    height: 15px;
+}
+
+#button {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    width: 80px;
+    height: 28px;
+}
+
+#resultado {
+    border: 1px solid black;
+    border-radius: 4px;
+    max-width: 1200px;
+    min-height: 100vh;
+}
+
+
+#pResultado {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.carro {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 250px;
+    height: 120px;
+    margin: 8px;
+    padding: 8px;
+}

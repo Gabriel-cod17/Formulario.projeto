@@ -1,66 +1,109 @@
+/* configuração geral */
+
 * {
-    padding: 0px;
-    margin: 0px;
-    border: none;
-    box-sizing: border-box;
-    font-size: large;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  box-sizing: border-box;
+  font-size: large;
 }
+/* configurando a div que estão guardados os input e labels */
 
 .campoForm {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .inputForm {
-    border: 1px solid black;
-    border-radius: 7px;
-    background-color: #e6e4e4;
-    width: 500px;
-    height: 24px;
-    cursor: pointer;
+  border: 1px solid black;
+  border-radius: 7px;
+  background-color: #e6e4e4;
+  width: 500px;
+  height: 24px;
+  cursor: pointer;
 }
 
+/* configurando a div com a classe tipo que recebem os input do tipo radios */
+
 .tipo {
-    margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
 }
 
 #inputTipo {
-    border: 1px solid black;
-    width: 20px;
-    height: 15px;
+  border: 1px solid black;
+  width: 20px;
+  height: 15px;
 }
 
-#button {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 17px;
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: green;
-    color: white;
-    width: 80px;
-    height: 28px;
+/* Configurando o botão enviar  */
+
+#button_enviar {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 17px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+  width: 80px;
+  height: 28px;
 }
+
+/* Configurando o botão remover  */
+
+.button_remover {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  width: 80px;
+  height: 25px;
+  margin-top: 8px;
+}
+
+/* Configurando a div resultado que recebem o formulário preenchido */
 
 #resultado {
-    border: 1px solid black;
-    border-radius: 4px;
-    max-width: 1200px;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 4px;
+  max-width: 1200px;
+  min-height: 100vh;
 }
-
 
 #pResultado {
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-style: italic;
-    font-size: 18px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-style: italic;
+  font-size: 18px;
 }
 
-.carro {
-    border: 1px solid black;
-    border-radius: 5px;
-    width: 250px;
-    height: 120px;
-    margin: 8px;
-    padding: 8px;
+/* Configurando a divGeral que armazena o formulário com sua div  */
+
+.divGeral {
+  display: grid;
+  grid-template-columns: repeat(4, 260px);
+  grid-template-rows: 1;
+  gap: 10px;
+}
+
+/* Configurando a classe recebido que e adicionada na div dos formulários pelo javascript */
+
+.recebido {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border: 1px solid black;
+  border-radius: 8px;
+  box-shadow: 0 8px 5px 5px rgba(0, 0, 0, 0.61);
+  width: 250px;
+  height: 150px;
+  margin: 8px;
+  padding: 8px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 17px;
 }

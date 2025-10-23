@@ -37,6 +37,11 @@
   height: 15px;
 }
 
+#div_button_enviar {
+  display: flex;
+  margin: 5px;
+}
+
 /* Configurando o botão enviar  */
 
 #button_enviar {
@@ -106,4 +111,60 @@
   padding: 8px;
   font-family: "Courier New", Courier, monospace;
   font-size: 17px;
+}
+
+@media (max-width: 800px) and (min-width: 250px) {
+  /* configurando a div que estão guardados os input e labels */
+  .campoForm {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+  }
+
+  .inputForm {
+    border: 1px solid black;
+    border-radius: 7px;
+    background-color: #e6e4e4;
+    width: 400px;
+    height: 24px;
+    cursor: pointer;
+  }
+
+  /* configurando a div com a classe tipo que recebem os input do tipo radios */
+
+  .tipo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+
+  /* Configurando o botão enviar  */
+
+  #button_enviar {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 17px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    width: 80px;
+    height: 28px;
+  }
+
+  /* Configurando a divGeral que armazena o formulário com sua div  */
+
+  .divGeral {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: 1;
+    gap: 10px;
+  }
+
+  /* Configurando a classe recebido que e adicionada na div dos formulários pelo javascript */
+
+  .recebido {
+    width: 205px;
+    height: 155px;
+  }
 }

@@ -76,7 +76,6 @@
   flex-direction: column;
   border: 1px solid black;
   border-radius: 4px;
-  max-width: 1200px;
   min-height: 100vh;
 }
 
@@ -91,7 +90,7 @@
 
 .divGeral {
   display: grid;
-  grid-template-columns: repeat(4, 260px);
+  grid-template-columns: repeat(5, 260px);
   grid-template-rows: 1;
   gap: 10px;
 }
@@ -152,13 +151,25 @@
     height: 28px;
   }
 
+  /* Configurando a div resultado que recebem o formulário preenchido */
+
+  #resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
   /* Configurando a divGeral que armazena o formulário com sua div  */
 
   .divGeral {
     display: grid;
-    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: repeat(2, 210px);
     grid-template-rows: 1;
-    gap: 10px;
   }
 
   /* Configurando a classe recebido que e adicionada na div dos formulários pelo javascript */
